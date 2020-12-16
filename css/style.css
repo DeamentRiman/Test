@@ -34,55 +34,17 @@ body{
     }
 }
 
-
-.page-main{
-    /*border: 1px solid goldenrod;*/
-}
-/*
-.page-main-list{
-    /*width: 100%;*/
-    /*margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-}
-
-.page-main-list-item__title{
-    background-color: grey;
-    display: flex;
-}
-
-.page-main-list-item{
-    display: flex;
-    width: 100%;
-    border-bottom: 1px solid grey;
-    align-items: center;
-}
-
-.page-main-list-item__name{
-    flex-grow: 1;
-}
-
-.page-main-list-item__surname{
-    flex-grow: 1;
-}
-
-.button{
-    width: 30px;
-    height: 30px;
-}*/
-
 .page-table{
+    margin-left: auto;
+    margin-right: auto;
     border: none;
     width: 100%;
     border-spacing: 0;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .page-table-title{
-    /*border-top: 1px solid grey;
-    border-bottom: 1px solid grey;*/
     background-color: lightgray;
 }
 
@@ -91,35 +53,35 @@ body{
     border-bottom: 1px solid grey;
 }
 
-.page-table-title__name,
-.page-table-title__surname{
+.page-table-title__first_name,
+.page-table-title__last_name{
     padding-top: 7px;
     padding-bottom: 7px;
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
 }
 
-.page-table-title__surname{
+.page-table-title__last_name{
     text-align: left;
 }
 
-.page-table-line-name,
-.page-table-line-surname,
+.page-table-line-first_name,
+.page-table-line-last_name,
 .page-table-line-button{
     padding-top: 4px;
     padding-bottom: 4px;
     border-bottom: 1px solid lightgray;
 }
 
-.page-table-line-name{
+.page-table-line-first_name{
     padding-left: 20px;
 }
 
-.page-table-line-name{
+.page-table-line-first_name{
     width: 36%;
 }
 
-.page-table-line-surname{
+.page-table-line-last_name{
     width: 55%;
 }
 
@@ -148,7 +110,7 @@ body{
     background-color: tomato;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    background-image: url("../img/icons8-delete.svg");
+    background-image: url("../img/delete.svg");
     background-repeat: no-repeat;
     background-size: 32px 32px;
     border: 1px solid tomato;
@@ -166,4 +128,60 @@ body{
     font-size: 12px;
     border: none;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
+
+.page-add-employee,
+.page-fix-employee{
+    /*min-width: 462px;*/
+    max-width: 462px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid darkgrey;
+    margin-bottom: 10px;
+}
+
+.page-add-employee-title,
+.page-fix-employee-title{
+    margin: 0;
+    background-color: darkgrey;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-weight: 600;
+    margin-bottom: 10px
+}
+
+.page-add-employee-back,
+.page-fix-employee-back{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+.page-add-employee-form,
+.page-fix-employee-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.page-add-employee-input,
+.page-fix-employee-input{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+.button-save,
+.button-fix{
+    margin-right: 10px;
+    margin-left: auto;
+}
+

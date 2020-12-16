@@ -12,60 +12,60 @@
                 <h1 class="visually-hidden">Список сотрудников</h1>
                 <table class="page-table">
                     <tr class="page-table-title">
-                        <th class="page-table-title__name">Имя</th>
-                        <th colspan="2" class="page-table-title__surname">Фамилия</th>
+                        <th class="page-table-title__first_name">Имя</th>
+                        <th colspan="2" class="page-table-title__last_name">Фамилия</th>
                     </tr>
                     <tr class="page-table-line">
-                        <td class="page-table-line-name">John</td>
-                        <td class="page-table-line-surname">Boo</td>
+                        <td class="page-table-line-first_name">John</td>
+                        <td class="page-table-line-last_name">Boo</td>
                         <td class="page-table-line-button">
                             <button class="button yellow-button"></button>
                             <button class="button red-button"></button>
                         </td>
                     </tr>
                     <tr class="page-table-line">
-                        <td class="page-table-line-name">Michael</td>
-                        <td class="page-table-line-surname">Robinson</td>
+                        <td class="page-table-line-first_name">Michael</td>
+                        <td class="page-table-line-last_name">Robinson</td>
                         <td class="page-table-line-button">
                             <button class="button yellow-button"></button>
                             <button class="button red-button"></button>
                         </td>
                     </tr>
                     <tr class="page-table-line">
-                        <td class="page-table-line-name">Alexander</td>
-                        <td class="page-table-line-surname">Robson</td>
+                        <td class="page-table-line-first_name">Alexander</td>
+                        <td class="page-table-line-last_name">Robson</td>
                         <td class="page-table-line-button">
                             <button class="button yellow-button"></button>
                             <button class="button red-button"></button>
                         </td>
                     </tr>
                     <tr class="page-table-line">
-                        <td class="page-table-line-name">Bob</td>
-                        <td class="page-table-line-surname">Robson</td>
+                        <td class="page-table-line-first_name">Bob</td>
+                        <td class="page-table-line-last_name">Robson</td>
                         <td class="page-table-line-button">
                             <button class="button yellow-button"></button>
                             <button class="button red-button"></button>
                         </td>
                     </tr>
                     <tr class="page-table-line">
-                        <td class="page-table-line-name">Michael</td>
-                        <td class="page-table-line-surname">Robinson</td>
+                        <td class="page-table-line-first_name">Michael</td>
+                        <td class="page-table-line-last_name">Robinson</td>
                         <td class="page-table-line-button">
                             <button class="button yellow-button"></button>
                             <button class="button red-button"></button>
                         </td>
                     </tr>
                     <tr class="page-table-line">
-                        <td class="page-table-line-name">Jennifer</td>
-                        <td class="page-table-line-surname">Pinsker</td>
+                        <td class="page-table-line-first_name">Jennifer</td>
+                        <td class="page-table-line-last_name">Pinsker</td>
                         <td class="page-table-line-button">
                             <button class="button yellow-button"></button>
                             <button class="button red-button"></button>
                         </td>
                     </tr>
                     <tr class="page-table-line">
-                        <td class="page-table-line-name">John</td>
-                        <td class="page-table-line-surname">Boo</td>
+                        <td class="page-table-line-first_name">John</td>
+                        <td class="page-table-line-last_name">Boo</td>
                         <td class="page-table-line-button">
                             <button class="button yellow-button"></button>
                             <button class="button red-button"></button>
@@ -73,32 +73,28 @@
                     </tr>
                 </table>
                 <button class="button button-add">Добавить сотрудника</button>
-                <!--<ul class="page-main-list">
-
-                    <li class="page-main-list-item__title">
-                        <p class="page-main-list-item__name">Имя</p>
-                        <p class="page-main-list-item__surname">Фамилия</p>
-                    </li>
-                    <li class="page-main-list-item">
-                        <p class="page-main-list-item__name">John</p>
-                        <p class="page-main-list-item__surname">Boo</p>
-                        <button class="button">Write</button>
-                        <button class="button">Delete</button>
-                    </li>
-                    <li class="page-main-list-item">
-                        <p class="page-main-list-item__name">John</p>
-                        <p class="page-main-list-item__surname">Boo</p>
-                        <button class="button">Write</button>
-                        <button class="button">Delete</button>
-                    </li>
-                    <li class="page-main-list-item">
-                        <p class="page-main-list-item__name">Michael</p>
-                        <p class="page-main-list-item__surname">Robinson</p>
-                        <button class="button">Write</button>
-                        <button class="button">Delete</button>
-                    </li>
-                </ul>-->
-            
+                <div class="page-add-employee">
+                   <h3 class="page-add-employee-title">Создание сотрудника</h3>
+                   <a class="page-add-employee-back">Назад к списку</a>
+                   <form class="page-add-employee-form" action="https://echo.htmlacademy.ru" method="post">
+                        <label class="visually-hidden" for="first_name">Введите имя сотрудника</label>
+                        <input class="page-add-employee-input" type="text" name="first_name" id="first_name" placeholder="Введите имя сотрудника">
+                        <label class="visually-hidden" for="last_name">Введите имя сотрудника</label>
+                        <input class="page-add-employee-input" type="text" name="last_name" id="last_name" placeholder="Введите фамилию сотрудника">
+                        <button class="button button-add button-save" type="submit">Сохранить</button>
+                   </form>
+                </div>      
+                <div class="page-fix-employee">
+                    <h3 class="page-fix-employee-title">Редактирование сотрудника</h3>
+                    <a class="page-fix-employee-back">Назад к списку</a>
+                    <form  class="page-fix-employee-form" action="https://echo.htmlacademy.ru" method="post">
+                        <label class="visually-hidden" for="first_name">Скорректируйте имя сотрудника</label>
+                        <input class="page-fix-employee-input" type="text" name="first_name" id="first_name" placeholder="Имя сотрудника">
+                        <label class="visually-hidden" for="last_name">Введите имя сотрудника</label>
+                        <input class="page-fix-employee-input" type="text" name="last_name" id="last_name" placeholder="Фамилию сотрудника">
+                        <button class="button button-add button-fix" type="submit">Сохранить</button>
+                    </form>
+                 </div>   
             </div>
         </div>
     </body>
