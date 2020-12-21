@@ -130,16 +130,29 @@ body{
     border-radius: 5px;
     margin-bottom: 10px;
 }
+/*action="https://echo.htmlacademy.ru"*/
 
 .page-add-employee,
 .page-fix-employee{
-    /*min-width: 462px;*/
-    max-width: 462px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    min-width: 280px;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
     border: 1px solid darkgrey;
-    margin-bottom: 10px;
+    background-color: white;
+}
+
+@media (min-width: 1200px){
+    .page-add-employee,
+    .page-fix-employee{
+        left: 35%;
+        min-width: 500px;
+        max-width: 650px;   
+    }
 }
 
 .page-add-employee-title,

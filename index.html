@@ -11,10 +11,13 @@
             <div class="container">
                 <h1 class="visually-hidden">Список сотрудников</h1>
                 <table class="page-table">
-                    <tr class="page-table-title">
-                        <th class="page-table-title__first_name">Имя</th>
-                        <th colspan="2" class="page-table-title__last_name">Фамилия</th>
-                    </tr>
+                    <thead>
+                        <tr class="page-table-title">
+                            <th class="page-table-title__first_name">Имя</th>
+                            <th colspan="2" class="page-table-title__last_name">Фамилия</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                     <tr class="page-table-line">
                         <td class="page-table-line-first_name">John</td>
                         <td class="page-table-line-last_name">Boo</td>
@@ -71,20 +74,23 @@
                             <button class="button red-button"></button>
                         </td>
                     </tr>
+                    </tbody>
                 </table>
                 <button class="button button-add">Добавить сотрудника</button>
-                <div class="page-add-employee">
+
+                <div class="page-add-employee visually-hidden">
                    <h3 class="page-add-employee-title">Создание сотрудника</h3>
                    <a class="page-add-employee-back">Назад к списку</a>
-                   <form class="page-add-employee-form" action="https://echo.htmlacademy.ru" method="post">
-                        <label class="visually-hidden" for="first_name">Введите имя сотрудника</label>
-                        <input class="page-add-employee-input" type="text" name="first_name" id="first_name" placeholder="Введите имя сотрудника">
-                        <label class="visually-hidden" for="last_name">Введите имя сотрудника</label>
-                        <input class="page-add-employee-input" type="text" name="last_name" id="last_name" placeholder="Введите фамилию сотрудника">
+                   <form class="page-add-employee-form"  method="post">
+                        <label class="visually-hidden" for="firstname">Введите имя сотрудника</label>
+                        <input class="page-add-employee-input" type="text" name="firstname" id="firstname" placeholder="Введите имя сотрудника">
+                        <label class="visually-hidden" for="lastname">Введите фамилию сотрудника</label>
+                        <input class="page-add-employee-input" type="text" name="lastname" id="lastname" placeholder="Введите фамилию сотрудника">
                         <button class="button button-add button-save" type="submit">Сохранить</button>
                    </form>
-                </div>      
-                <div class="page-fix-employee">
+                </div>
+
+                <div class="page-fix-employee visually-hidden">
                     <h3 class="page-fix-employee-title">Редактирование сотрудника</h3>
                     <a class="page-fix-employee-back">Назад к списку</a>
                     <form  class="page-fix-employee-form" action="https://echo.htmlacademy.ru" method="post">
@@ -94,8 +100,12 @@
                         <input class="page-fix-employee-input" type="text" name="last_name" id="last_name" placeholder="Фамилию сотрудника">
                         <button class="button button-add button-fix" type="submit">Сохранить</button>
                     </form>
-                 </div>   
+                </div>
+
             </div>
         </div>
+
+        <script src="js/popup.js"></script>
+
     </body>
 </html>
