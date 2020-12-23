@@ -28,12 +28,6 @@ body{
     min-width: 320px;
 }
 
-@media (min-width: 1200px){
-    .page{
-        background-color: red;
-    }
-}
-
 .page-table{
     margin-left: auto;
     margin-right: auto;
